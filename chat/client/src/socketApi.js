@@ -14,3 +14,8 @@ export const initSocket = () => {
         console.log("Sunucuya Bağlanıldı")
     })
 }
+
+
+export const send = (color) =>{
+    socket.emit('newColor',color)
+}
